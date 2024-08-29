@@ -1,2 +1,3 @@
 # scame
-My emacs configuration
+
+> Is my (not-very masterised) emacs configuration
