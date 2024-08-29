@@ -1,0 +1,2 @@
+# scame
+My emacs configuration
