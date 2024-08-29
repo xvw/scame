@@ -15,4 +15,4 @@
 (blink-cursor-mode 5)
 
 ;; Theme selection
-(load-theme 'wombat)
+(load-theme 'modus-vivendi)

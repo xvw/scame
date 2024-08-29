@@ -7,5 +7,6 @@
 (save-place-mode 1)
 (setq use-dialog-box nil)
 (global-auto-revert-mode 1)
+(setq auto-revert-verbose nil)
 (setq global-auto-revert-non-file-buffers t)
 (electric-pair-mode 1)
