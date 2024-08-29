@@ -8,3 +8,4 @@
 (setq use-dialog-box nil)
 (global-auto-revert-mode 1)
 (setq global-auto-revert-non-file-buffers t)
+(electric-pair-mode 1)

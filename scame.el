@@ -2,3 +2,4 @@
 (load "ui/ui")
 (load "packages/packages")
 (load "bindings/bindings")
+(load "lang/lang")
