@@ -14,4 +14,4 @@
 (global-display-line-numbers-mode 1)
 (hl-line-mode 1)
 (blink-cursor-mode 5)
-
+(setq column-number-mode t)

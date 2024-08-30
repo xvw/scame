@@ -9,7 +9,10 @@
 ;; A more expressive mode-line
 (use-package doom-modeline
   :ensure t
-  :init (doom-modeline-mode 1))
+  :init
+  (doom-modeline-mode 1)
+  :config
+  (setq doom-modeline-position-column-line-format '("%l:%c")))
 
 ;; Vertico allows completion in the mini-buffer
 (use-package vertico
