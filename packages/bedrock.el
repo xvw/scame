@@ -51,10 +51,19 @@
   (embark-collect-mode . consult-preview-at-point-mode))
 
 ;; General Completion Engine
-(use-package company
-  :ensure t
-  :config
-  (global-company-mode t))
+(use-package corfu
+  :custom
+  (corfu-auto t)
+  (corfu-preselect 'directory)
+  (corfu-cycle t)
+  :init
+  (global-corfu-mode))
+
+(use-package emacs
+  :custom
+  (tab-always-indent 'complete)
+  (text-mode-ispell-word-completion nil)
+  (read-extended-command-predicate #'command-completion-default-include-p))
 
 ;; Git support for emacs
 (use-package magit
@@ -70,7 +79,22 @@
   :ensure t
   :hook (prog-mode text-mode))
 
+;; Identation guides
+(use-package highlight-indent-guides
+  :ensure t
+  :hook (prog-mode text-mode)
+  :init
+  (setq highlight-indent-guides-method
+	(if (display-graphic-p)
+	    'bitmap 'character)
+        highlight-indent-guides-bitmap-function
+	#'highlight-indent-guides--bitmap-dots))
+
 ;; rainbow delimiters
 (use-package rainbow-delimiters
   :ensure t
   :hook (prog-mode text-mode))
+
+;; Emoji in Emacs
+(use-package emojify
+  :hook (after-init . global-emojify-mode))
