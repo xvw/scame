@@ -11,9 +11,9 @@
 (load "packages/packages") ;; Generic packages used that affect the
                            ;; entire user experience
 
-(load "ui/ui")             ;; Configuring the visual aspects of Emacs
-
 (load "bindings/bindings") ;; Generic key bindings for all modes
 
 (load "lang/lang")         ;; Concrete implementation of modes for
 			   ;; different languages
+
+(load "ui/ui")             ;; Configuring the visual aspects of Emacs

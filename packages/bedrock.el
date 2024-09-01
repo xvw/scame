@@ -60,6 +60,17 @@
 (use-package magit
   :commands (magit-status magit-get-current-branch)
   :custom
-  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+  (magit-display-buffer-function
+   #'magit-display-buffer-same-window-except-diff-v1))
 
 (load "packages/ligature.el") ;; Handle ligatures for Fira Code
+
+;; colorful mode
+(use-package colorful-mode
+  :ensure t
+  :hook (prog-mode text-mode))
+
+;; rainbow delimiters
+(use-package rainbow-delimiters
+  :ensure t
+  :hook (prog-mode text-mode))
