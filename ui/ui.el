@@ -2,4 +2,8 @@
 ;; learning process (UI changes, themes information, etc.).
 
 (load "ui/preset")
-(load-theme 'deeper-blue t)
+
+(use-package gruvbox-theme
+  :ensure t)
+
+(load-theme 'gruvbox t)
