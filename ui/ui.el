@@ -6,4 +6,4 @@
 (use-package gruvbox-theme
   :ensure t)
 
-(load-theme 'gruvbox t)
+(load-theme 'gruvbox-dark-hard t)
