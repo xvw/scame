@@ -25,3 +25,15 @@
 ;; Display active key binding
 (use-package command-log-mode
   :ensure t)
+
+;; Shortcut for moving at the begining or the end of a buffer
+(use-package beginend 
+  :ensure t
+  :demand t
+  :config  
+  (beginend-global-mode))
+
+;; Highlight TODO
+(use-package hl-todo
+  :ensure t
+  :hook (prog-mode text-mode))

@@ -7,10 +7,11 @@
 ;; be scoped by theme.
 
 
-(load "prelude")
+(load "base")
 (load "bindings/bindings")
 (load "modules/modules")
 (load "lang/lang")
+(load "prelude")
 
 ;; Global configuration
 
