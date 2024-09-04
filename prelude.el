@@ -47,3 +47,37 @@
 (setq ls-lisp-use-insert-directory-program nil)
 (require 'ls-lisp)
 (setq ls-lisp-dirs-first t)
+
+;; Support for cursor, line numbers, etc.
+(global-display-line-numbers-mode 1)
+(hl-line-mode 1)
+(blink-cursor-mode 5)
+(setq column-number-mode t)
+
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(tooltip-mode -1)
+(set-fringe-mode 10)
+(menu-bar-mode -1)
+
+;; Everything to do with declarative package installation and default
+;; package support, not related to language support.
+
+
+;; Plumbing required to support packages via org, elpa and melpa
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+
+;; Initialising and refreshing the list of packages
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+
+;;Setting up the [use-package] primitive
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)

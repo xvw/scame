@@ -1,7 +1,5 @@
 ;; This directory contains all the configuration relating to the Emacs
-;; learning process (UI changes, themes information, etc.).
-
-(load "ui/preset")
+;; theming process (UI changes, themes information, etc.).
 
 (use-package color-theme-sanityinc-tomorrow
   :init (progn (load-theme 'sanityinc-tomorrow-day t t)
@@ -14,7 +12,6 @@
 
 (use-package spacemacs-theme
   :init (progn (load-theme 'spacemacs-dark t t)
-	       (load-theme 'spacemacs-light t t)
-               (enable-theme 'spacemacs-dark))
+	       (load-theme 'spacemacs-light t t))
   :defer t
   :ensure t)

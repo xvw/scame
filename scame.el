@@ -6,14 +6,13 @@
 ;; The directories are organised (arguably correctly) so that they can
 ;; be scoped by theme.
 
-(load "prelude")           ;; Generic utility functions and configuration
 
-(load "packages/packages") ;; Generic packages used that affect the
-                           ;; entire user experience
+(load "prelude")
+(load "bindings/bindings")
+(load "modules/modules")
+(load "lang/lang")
 
-(load "bindings/bindings") ;; Generic key bindings for all modes
+;; Global configuration
 
-(load "lang/lang")         ;; Concrete implementation of modes for
-			   ;; different languages
-
-(load "ui/ui")             ;; Configuring the visual aspects of Emacs
+(set-face-attribute 'default nil :font "Fira Code" :height 140)
+(enable-theme 'spacemacs-dark)
