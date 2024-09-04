@@ -22,5 +22,7 @@
 
 ;; Language-independent package support
 
-(load "packages/bedrock") ;; All the packages needed for my emacs
-			  ;; configuration
+(load "packages/bedrock")     ;; All the packages needed for my emacs
+			      ;; configuration
+
+(load "packages/ligature.el") ;; Handle ligatures for Fira Code

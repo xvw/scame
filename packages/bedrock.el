@@ -70,7 +70,11 @@
   (magit-display-buffer-function
    #'magit-display-buffer-same-window-except-diff-v1))
 
-(load "packages/ligature.el") ;; Handle ligatures for Fira Code
+(use-package browse-at-remote
+  :ensure t)
+
+(use-package git-modes
+  :ensure t)
 
 ;; colorful mode
 (use-package colorful-mode
@@ -100,3 +104,32 @@
 ;; Emoji in Emacs
 (use-package emojify
   :hook (after-init . global-emojify-mode))
+
+;; Dired improvement
+(use-package all-the-icons
+  :ensure t)
+
+(use-package all-the-icons-nerd-fonts
+  :after all-the-icons
+  :demand t
+  :config
+  (all-the-icons-nerd-fonts-prefer))
+
+(use-package all-the-icons-dired
+  :ensure t
+  :hook (dired-mode))
+
+(use-package diredfl
+  :ensure t
+  :hook (dired-mode))
+
+;; Undo
+(use-package vundo
+  :ensure t
+  :config
+  (setq vundo-compact-display t)
+  (setq vundo-glyph-alist vundo-unicode-symbols)
+  :bind
+  (("C-x u" . vundo)))
+
+
