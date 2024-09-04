@@ -3,3 +3,4 @@
 ;; merlin for IDE services.
 
 (load "lang/ocaml/packages") ;; load and configure need packages
+(load "lang/ocaml/custom")   ;; Additionnal commands

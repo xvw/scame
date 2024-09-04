@@ -10,9 +10,7 @@
 (use-package doom-modeline
   :ensure t
   :init
-  (doom-modeline-mode 1)
-  :config
-  (setq doom-modeline-position-column-line-format '("%l:%c")))
+  (doom-modeline-mode))
 
 ;; Vertico allows completion in the mini-buffer
 (use-package vertico
@@ -82,18 +80,22 @@
 ;; Identation guides
 (use-package highlight-indent-guides
   :ensure t
-  :hook (prog-mode text-mode)
+  :hook (prog-mode text-mode conf-mode)
   :init
-  (setq highlight-indent-guides-method
-	(if (display-graphic-p)
-	    'bitmap 'character)
-        highlight-indent-guides-bitmap-function
-	#'highlight-indent-guides--bitmap-dots))
+  (setq highlight-indent-guides-method 'bitmap)
+  (setq highlight-indent-guides-bitmap-function
+	#'highlight-indent-guides--bitmap-dots)
+  (setq highlight-indent-guides-responsive 'top)
+  :config
+  (setq highlight-indent-guides-delay 0)
+  (setq highlight-indent-guides-auto-character-face-perc 45)
+  (setq highlight-indent-guides-auto-top-character-face-perc 100))
+
 
 ;; rainbow delimiters
 (use-package rainbow-delimiters
   :ensure t
-  :hook (prog-mode text-mode))
+  :hook (prog-mode text-mode conf-mode))
 
 ;; Emoji in Emacs
 (use-package emojify
