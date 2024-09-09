@@ -16,4 +16,4 @@
 ;; Global configuration
 
 (set-face-attribute 'default nil :font "Fira Code" :height 140)
-(enable-theme 'spacemacs-dark)
+(enable-theme 'gruvbox-dark-hard)

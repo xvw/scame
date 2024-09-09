@@ -3,4 +3,4 @@
 (progn
   (require 'merlin)
   (when (boundp 'merlin-mode-map)
-    (define-key merlin-mode-map (kbd "M-w") #'merlin-copy-enclosing)))
+    (define-key merlin-mode-map (kbd "M-W") #'merlin-copy-enclosing)))

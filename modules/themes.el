@@ -15,3 +15,12 @@
 	       (load-theme 'spacemacs-light t t))
   :defer t
   :ensure t)
+
+(use-package gruvbox-theme
+  :init (progn (load-theme 'gruvbox-dark-medium t t)
+	       (load-theme 'gruvbox-dark-hard t t)
+	       (load-theme 'gruvbox-light-medium t t)
+	       (load-theme 'gruvbox-light-hard t t))
+  :defer t
+  :ensure t)
+
