@@ -17,23 +17,28 @@
        (prettify-symbols-mode))))
   (setq tuareg-prettify-symbols-full t))
 
-;; Import the dune mode for editing dune files
-(use-package dune
-  :ensure t)
 
 ;; Import merlin as an hook for tuareg
-(use-package merlin
-  :ensure t
-  :config
-  (add-hook 'tuareg-mode-hook 'merlin-mode)
-  :init
-  (merlin-mode))
-
-;; Use company as a backend
-(use-package merlin-company
-  :ensure t
-  :config
-  (add-to-list 'company-backends 'merlin-company-backend))
+(let ((opam-share (ignore-errors (car (process-lines "opam" "var" "share")))))
+  (when (and opam-share (file-directory-p opam-share))
+    (add-to-list 'load-path (expand-file-name "emacs/site-lisp" opam-share))
+    (autoload 'merlin-mode "merlin" nil t nil)
+    (require 'merlin-iedit)
+    (require 'merlin-imenu)
+    (require 'merlin-company)
+    (require 'ocp-indent)
+    (require 'utop)
+    (require 'dune)
+    (require 'ocamlformat)
+    (add-hook 'merlin-mode-hook 'company-mode)
+    (add-hook 'tuareg-mode-hook 'merlin-mode t)
+    (add-hook 'tuareg-mode-hook 'ocp-setup-indent)
+    (add-hook 'tuareg-mode-hook 'utop-minor-mode)
+    (add-hook
+     'tuareg-mode-hook
+     (lambda ()
+       (setq ocamlformat-show-errors "echo")
+       (add-hook 'before-save-hook #'ocamlformat-before-save)))))
 
 ;; Import eldoc that display the list of argument of a function call,
 ;; currently writing
@@ -41,28 +46,6 @@
   :ensure t
   :hook (merlin-mode . merlin-eldoc-setup))
 
-;; Import utop to use utop as a shell for an emacs session
-(use-package utop
-  :ensure t
-  :config
-  (add-hook 'tuareg-mode-hook 'utop-minor-mode))
-
-;; Import ocp-indent to define where should the cursor be positionned
-;; during an edition
-(use-package ocp-indent
-  :ensure t
-  :config
-  (add-hook 'tuareg-mode-hook 'ocp-setup-indent))
-
-;; Import ocamlformat and use-it before-save
-(use-package ocamlformat
-  :ensure t
-  :config
-  (add-hook
-   'tuareg-mode-hook
-   (lambda ()
-     (setq ocamlformat-show-errors "echo")
-     (add-hook 'before-save-hook #'ocamlformat-before-save))))
 
 (use-package opam-switch-mode
   :ensure t

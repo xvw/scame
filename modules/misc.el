@@ -44,3 +44,7 @@
   :hook (prog-mode text-mode markdown-mode)
   :config
   (require 'smartparens-config))
+
+;; iedit
+(use-package iedit
+  :ensure t)
