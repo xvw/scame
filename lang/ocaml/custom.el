@@ -4,3 +4,4 @@
   (require 'merlin)
   (when (boundp 'merlin-mode-map)
     (define-key merlin-mode-map (kbd "M-W") #'merlin-copy-enclosing)))
+
