@@ -19,6 +19,13 @@
     markdown-compile-multimarkdown)
   "Try to build markdown")
 
+(defun markdown-compile (beg end output-buffer)
+  "Compile markdown into html."
+  (or (run-hook-with-args-until-success 'markdown-compile-functions
+                                        beg end output-buffer)
+      (user-error "No markdown program could be found. Install marked, pandoc, markdown or multimarkdown.")))
+
+
 ;; Global markdown mode
 (use-package markdown-mode
   :ensure t
@@ -32,8 +39,9 @@
 	markdown-fontify-whole-heading-line t
 	markdown-fontify-code-blocks-natively t
 	markdown-command #'markdown-compile
-	markdown-open-command (cond ((featurep :system 'macos) "open")
-				    ((featurep :system 'linux) "xdg-open")))
+        markdown-open-command
+        (cond ((featurep :system 'macos) "open")
+              ((featurep :system 'linux) "xdg-open")))
 
   :bind
   (:map markdown-mode-map
