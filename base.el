@@ -16,9 +16,10 @@
 (setq use-dialog-box nil)
 
 ;; Applies automatic file system file updates (and does not notify)
-(global-auto-revert-mode 1)
+(global-auto-revert-mode t)
 (setq auto-revert-verbose nil)
 (setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-interval 1)
 
 ;; Move backup files in one directory From
 ;; https://emacs.stackexchange.com/questions/33/put-all-backups-into-one-backup-folder
