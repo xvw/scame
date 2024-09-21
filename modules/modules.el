@@ -6,4 +6,5 @@
 (load "modules/undo")
 (load "modules/themes")
 (load "modules/git")
+(load "modules/terminal")
 (load "modules/misc")

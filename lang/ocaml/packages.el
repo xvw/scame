@@ -29,5 +29,3 @@
   :ensure t
   :hook
   ((tuareg-mode merlin-mode) . opam-switch-mode))
-
-

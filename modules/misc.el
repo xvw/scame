@@ -48,3 +48,11 @@
 ;; iedit
 (use-package iedit
   :ensure t)
+
+;; imenu-list
+(use-package imenu-list
+  :ensure t
+  :config
+  (global-set-key (kbd "C-=") #'imenu-list-smart-toggle)
+  (setq imenu-list-focus-after-activation t)
+  (setq imenu-list-auto-resize t))
