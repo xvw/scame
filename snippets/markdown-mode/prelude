@@ -1,0 +1,8 @@
+# name: prelude
+# key: !prelude
+# --
+---
+title: $1
+---
+
+$0

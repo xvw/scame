@@ -56,3 +56,9 @@
   (global-set-key (kbd "C-=") #'imenu-list-smart-toggle)
   (setq imenu-list-focus-after-activation t)
   (setq imenu-list-auto-resize t))
+
+;; YASnippet
+(use-package yasnippet
+  :config
+  (setq yas-snippet-dirs '("~/scame/snippets"))
+  (yas-global-mode 1))
