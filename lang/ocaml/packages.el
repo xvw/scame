@@ -2,6 +2,7 @@
   :ensure t
   :config
   (add-hook 'tuareg-mode-hook 'merlin-mode)
+  (require 'merlin-imenu)
   :init
   (merlin-mode))
 
@@ -21,10 +22,6 @@
   :ensure t
   :config
   (add-hook 'tuareg-mode-hook 'utop-minor-mode))
-
-(use-package merlin-imenu
-  :ensure t
-  :hook (merlin-mode . merlin-eldoc-setup))
 
 ;; Import eldoc that display the list of argument of a function call,
 ;; currently writing
