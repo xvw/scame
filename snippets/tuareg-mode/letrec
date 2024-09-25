@@ -1,0 +1,4 @@
+# name: letrec
+# key: !letrec
+# --
+let rec ${1:$$(downcase yas-text)} = $0

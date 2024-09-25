@@ -1,0 +1,6 @@
+# name: intf
+# key: !intf
+# --
+module ${1:$$(capitalize (string-replace " " "_" yas-text))} : sig
+  $0
+end

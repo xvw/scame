@@ -1,0 +1,6 @@
+# name: impl
+# key: !impl
+# --
+module ${1:$$(capitalize (string-replace " " "_" yas-text))} = struct
+  $0
+end

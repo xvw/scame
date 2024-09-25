@@ -2,6 +2,8 @@
 (use-package vertico
   :diminish
   :ensure t
+  :custom
+  (vertico-cycle t)
   :init
   (vertico-mode))
 
@@ -20,8 +22,12 @@
 
 ;; Make anotation in the mini-buffer (also for vertico)
 (use-package marginalia
+  :after vertico
   :ensure t
-  :config
+  :custom
+  (marginalia-annotators
+   '(marginalia-annotators-heavy marginalia-annotators-light nil))
+  :init
   (marginalia-mode))
 
 ;; Hook between Embark and consult

@@ -1,0 +1,4 @@
+# name: and+
+# key: !and+
+# --
+and+ ${1:$$(downcase yas-text)} = $0

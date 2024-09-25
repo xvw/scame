@@ -1,0 +1,4 @@
+# name: email
+# key: !email
+# --
+${1:name}  <${2:email}> $0

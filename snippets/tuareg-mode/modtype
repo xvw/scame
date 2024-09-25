@@ -1,0 +1,6 @@
+# name: modtype
+# key: !modtype
+# --
+module type ${1:$$(upcase (string-replace " " "_" yas-text))} = sig
+  $0
+end

@@ -1,0 +1,4 @@
+# name: letrecin
+# key: !letrecin
+# --
+let rec ${1:$$(downcase yas-text)} = $2 in $0
