@@ -4,4 +4,4 @@
 
 (load "lang/ocaml/tuareg")   ;; Load Tuareg (OCaml root)
 (load "lang/ocaml/packages") ;; load and configure need packages
-(load "lang/ocaml/custom")   ;; Additionnal commands
+(load "lang/ocaml/lab")

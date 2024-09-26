@@ -1,5 +1,8 @@
 (use-package merlin
   :ensure t
+  :bind (:map merlin-mode-map
+	      ("M-W" . merlin-copy-enclosing)
+	      ("C-c m" . merlin-move))
   :config
   (add-hook 'tuareg-mode-hook 'merlin-mode)
   (require 'merlin-imenu)
