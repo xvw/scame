@@ -24,10 +24,6 @@
   (interactive)
   (merlin--goto-file-and-point (merlin-call-jump "module-type")))
 
-;; A dummy command that close a transient pan
-(defun merlin--transient-discard ()
-  (interactive)
-  (message "done"))
 
 ;; A little trick to make browsing the source interactive using a
 ;; transient pan
@@ -46,5 +42,8 @@
 
    ;; Since commands are transient, allow to closes quicly, without
    ;; making `C-g' mandatory
-   [("q" "done" merlin--transient-discard)]])
+   [("q" "done" transient-quit-one)]])
 
+(transient-define-prefix xvw/test ()
+  "a comprehensive description"
+  [("a" "select" transient-quit-one)])
