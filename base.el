@@ -55,6 +55,9 @@
 (blink-cursor-mode 5)
 (setq column-number-mode t)
 
+;; use space instead of tabs
+(setq-default indent-tabs-mode nil)
+
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (tooltip-mode -1)

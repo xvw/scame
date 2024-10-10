@@ -23,4 +23,3 @@
 	       (load-theme 'gruvbox-light-hard t t))
   :defer t
   :ensure t)
-
