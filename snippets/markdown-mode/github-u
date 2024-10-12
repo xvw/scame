@@ -1,0 +1,4 @@
+# name: github-u
+# key: !github:u
+# --
+[@${1}](https://github.com/${1})

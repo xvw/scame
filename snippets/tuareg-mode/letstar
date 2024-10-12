@@ -1,4 +1,4 @@
 # name: letstar
-# key: !let*
+# key: !lets
 # --
 let* ${1:$$(downcase yas-text)} = $2 in $0
