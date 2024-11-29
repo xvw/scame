@@ -43,7 +43,3 @@
    ;; Since commands are transient, allow to closes quicly, without
    ;; making `C-g' mandatory
    [("q" "done" transient-quit-one)]])
-
-(transient-define-prefix xvw/test ()
-  "a comprehensive description"
-  [("a" "select" transient-quit-one)])
