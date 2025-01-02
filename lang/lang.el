@@ -1,3 +1,4 @@
+(load "lang/elisp")             ;; Support for elisp ediition
 (load "lang/markdown")          ;; Support for editing Markdown
 (load "lang/d2")                ;; Support for editing d2 files
 (load "lang/yaml")              ;; Support for editing Yaml files
