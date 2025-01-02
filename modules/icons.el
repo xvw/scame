@@ -1,8 +1,10 @@
 ;; A set of icons used in particular by doomline-mode
-(use-package nerd-icons)
+(use-package nerd-icons
+  :ensure t)
 
 ;; Emoji in Emacs
 (use-package emojify
+  :ensure t
   :hook (after-init . global-emojify-mode))
 
 ;; Dired improvement

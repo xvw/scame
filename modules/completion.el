@@ -43,10 +43,28 @@
   (corfu-preselect 'directory)
   (corfu-cycle t)
   :init
-  (global-corfu-mode))
+  (global-corfu-mode)
+  :config
+  (corfu-popupinfo-mode 1))
 
 (use-package emacs
   :custom
   (tab-always-indent 'complete)
   (text-mode-ispell-word-completion nil)
   (read-extended-command-predicate #'command-completion-default-include-p))
+
+;; Some usage of icon because...
+
+
+(use-package nerd-icons-completion
+  :ensure t
+  :after marginalia
+  :config
+  (nerd-icons-completion-marginalia-setup)
+  (nerd-icons-completion-mode 1))
+
+(use-package nerd-icons-corfu
+  :ensure t
+  :after corfu
+  :config
+  (add-to-list 'corfu-margin-formatters #'nerd-icons-corfu-formatter))
