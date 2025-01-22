@@ -16,4 +16,4 @@
 ;; Global configuration
 
 (set-face-attribute 'default nil :font "Fira Code" :height 140)
-(enable-theme 'gruvbox-dark-hard)
+(enable-theme 'doom-horizon)
