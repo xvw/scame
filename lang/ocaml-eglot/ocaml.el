@@ -3,4 +3,5 @@
 (require 'ocaml-eglot)
 (add-hook #'tuareg-mode-hook #'ocaml-eglot)
 (add-hook #'ocaml-eglot-hook #'eglot-ensure)
-(add-hook #'after-save-hook #'eglot-format)
+(add-hook #'ocaml-eglot-hook
+          (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
