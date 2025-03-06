@@ -1,5 +1,18 @@
 (load "lang/ocaml/tuareg")
 
+(use-package dune
+  :ensure t)
+
+(use-package utop
+  :ensure t
+  :hook
+  (tuareg-mode . utop-minor-mode))
+
+(use-package opam-switch-mode
+  :ensure t
+  :hook
+  (tuareg-mode . opam-switch-mode))
+
 (use-package ocaml-eglot
   :ensure t
   :after tuareg

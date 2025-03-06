@@ -10,9 +10,10 @@
    nil
    :weight 'bold)
   
-  (add-hook
-   'tuareg-mode-hook
-   (lambda ()
-     (when (functionp 'prettify-symbols-mode)
-       (prettify-symbols-mode))))
-  (setq tuareg-prettify-symbols-full t))
+  ;; (add-hook
+  ;;  'tuareg-mode-hook
+  ;;  (lambda ()
+  ;;    (when (functionp 'prettify-symbols-mode)
+  ;;      (prettify-symbols-mode))))
+  ;; (setq tuareg-prettify-symbols-full t)
+  )
