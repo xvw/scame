@@ -85,3 +85,15 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
+
+
+;;; Some Eglot configuration
+
+(add-hook #'eglot-managed-mode-hook
+          (lambda () (eldoc-mode -1)))
+
+;; (use-package eglot
+;;   :config
+;;   (add-hook #'eglot-managed-mode-hook
+;;             (lambda ()
+;;               (eldoc-mode -1))))
