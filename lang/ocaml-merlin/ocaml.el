@@ -3,5 +3,5 @@
 ;; merlin for IDE services.
 
 (load "lang/ocaml/tuareg")   ;; Load Tuareg (OCaml root)
-(load "lang/ocaml/packages") ;; load and configure need packages
-(load "lang/ocaml/lab")
+(load "lang/ocaml-merlin/packages") ;; load and configure need packages
+(load "lang/ocaml-merlin/lab")
