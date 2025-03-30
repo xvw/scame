@@ -1,5 +1,4 @@
-;; Issue with emacs 30
+(use-package package-lint
+  :ensure t)
 
-;; (use-package package-lint
-;;   :ensure t)
-
+(add-hook 'emacs-lisp-mode-hook #'flymake-mode)

@@ -6,5 +6,5 @@
 (load "lang/rust")              ;; Minimal support for Rust edition
 (load "lang/scala")             ;; Minimal support for Scala Edition
 (load "lang/proof-general")     ;; Coq via Proof General
-(load "lang/ocaml/ocaml-merlin") ;; Support for the OCaml language with baremetal Merlin
+(load "lang/ocaml-merlin/ocaml") ;; Support for the OCaml language with baremetal Merlin
 ;; (load "lang/ocaml/ocaml") ;; Support for the OCaml language with eglot and OCaml-lsp
