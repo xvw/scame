@@ -94,10 +94,6 @@
   :after (flycheck eglot))
 
 (add-hook #'eglot-managed-mode-hook
-          (lambda () (eldoc-mode -1)))
-
-;; (use-package eglot
-;;   :config
-;;   (add-hook #'eglot-managed-mode-hook
-;;             (lambda ()
-;;               (eldoc-mode -1))))
+          (lambda ()
+            (eldoc-mode -1)
+            (eglot-inlay-hints-mode -1)))

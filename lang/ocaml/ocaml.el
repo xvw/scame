@@ -1,4 +1,5 @@
 (load "lang/ocaml/tuareg")
+(load "lang/ocaml/mld")
 
 (use-package ocaml-eglot
   :ensure t
@@ -7,8 +8,9 @@
   (tuareg-mode . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
   (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
+  (eglot-managed-mode . (lambda () (flycheck-eglot-mode 1)))
   :config
-  (setq ocaml-eglot-syntax-checker 'flymake))
+  (setq ocaml-eglot-syntax-checker 'flycheck))
 
 
 (use-package dune
