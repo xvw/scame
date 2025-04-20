@@ -96,3 +96,4 @@
 (add-hook #'eglot-managed-mode-hook
           (lambda ()
             (eglot-inlay-hints-mode -1)))
+
