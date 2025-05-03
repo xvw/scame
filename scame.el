@@ -15,8 +15,8 @@
 (load "prelude")
 
 (set-face-attribute 'default nil :font "Fira Code" :height 140)
-;; (enable-theme 'nord)
-(enable-theme 'doom-horizon)
+(enable-theme 'doom-moonlight)
+;; (enable-theme 'doom-horizon)
 
 ;; Very cutsom and early stuff
 (load "kohai")

@@ -49,3 +49,6 @@
 
 (use-package nord-theme
   :ensure t)
+
+(use-package zerodark-theme
+  :ensure t)
