@@ -62,3 +62,7 @@
   :config
   (setq yas-snippet-dirs '("~/scame/snippets"))
   (yas-global-mode 1))
+
+;; Auto-dim-buffer
+(use-package auto-dim-other-buffers
+  :ensure t)
