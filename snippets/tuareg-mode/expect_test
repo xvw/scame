@@ -1,0 +1,5 @@
+# name: expect
+# key: %expect
+# --
+let%expect_test "$1" =
+  assert false

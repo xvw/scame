@@ -57,12 +57,6 @@
   (setq imenu-list-focus-after-activation t)
   (setq imenu-list-auto-resize t))
 
-;; YASnippet
-(use-package yasnippet
-  :config
-  (setq yas-snippet-dirs '("~/scame/snippets"))
-  (yas-global-mode 1))
-
 ;; Auto-dim-buffer
 (use-package auto-dim-other-buffers
   :ensure t)
