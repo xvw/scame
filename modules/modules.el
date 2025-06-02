@@ -9,4 +9,5 @@
 (load "modules/git")
 (load "modules/terminal")
 (load "modules/treemacs")
+(load "modules/uniline")
 (load "modules/misc")
