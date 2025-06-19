@@ -11,4 +11,5 @@
 (load "modules/treemacs")
 (load "modules/uniline")
 (load "modules/yas")
+(load "modules/feed")
 (load "modules/misc")

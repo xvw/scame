@@ -18,5 +18,7 @@
 (enable-theme 'doom-moonlight)
 ;; (enable-theme 'doom-horizon)
 
+(load "feeds")
+
 ;; Very cutsom and early stuff
 (load "kohai")
