@@ -23,4 +23,5 @@
         "https://maiste.fr/rss.xml"
         "https://blog.clement.delafargue.name/atom.xml"
         "https://nokomprendo.gitlab.io/atom.xml"
-        "https://www.heyplzlookat.me/atom.xml"))
+        "https://www.heyplzlookat.me/atom.xml"
+        "https://blog.janestreet.com/feed.xml"))
