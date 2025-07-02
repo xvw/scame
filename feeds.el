@@ -1,5 +1,6 @@
 (setq elfeed-feeds
       '("https://xvw.lol/atom.xml"
+        "https://xvw.lol/en/atom.xml"
         "https://blog.osau.re/feed.xml"
         "https://ehret.me/rss.xml"
         "https://www.heyplzlookat.me/atom.xml"
