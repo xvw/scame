@@ -25,4 +25,5 @@
         "https://blog.clement.delafargue.name/atom.xml"
         "https://nokomprendo.gitlab.io/atom.xml"
         "https://www.heyplzlookat.me/atom.xml"
-        "https://blog.janestreet.com/feed.xml"))
+        "https://blog.janestreet.com/feed.xml"
+        "https://site.condor-du-plateau.fr/feed.atom"))
