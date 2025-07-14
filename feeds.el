@@ -28,4 +28,9 @@
         "https://blog.janestreet.com/feed.xml"
         "https://site.condor-du-plateau.fr/feed.atom"
         "https://tarides.com/feed.xml"
-        "https://gwern.substack.com/feed"))
+        "https://gwern.substack.com/feed"
+        "https://helveticablanc.com/feed.xml"
+        "https://kokorobot.ca/links/rss.xml"
+        "https://ritualdust.com/about/index.xml"
+        "https://fabiensanglard.net/rss.xml"
+        "https://prog21.dadgum.com/atom.xml"))
