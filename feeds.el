@@ -26,4 +26,6 @@
         "https://nokomprendo.gitlab.io/atom.xml"
         "https://www.heyplzlookat.me/atom.xml"
         "https://blog.janestreet.com/feed.xml"
-        "https://site.condor-du-plateau.fr/feed.atom"))
+        "https://site.condor-du-plateau.fr/feed.atom"
+        "https://tarides.com/feed.xml"
+        "https://gwern.substack.com/feed"))
