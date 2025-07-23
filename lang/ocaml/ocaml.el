@@ -9,7 +9,8 @@
   (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
   :config
   (setq ocaml-eglot-syntax-checker 'flymake)
-  (set-face-foreground 'eglot-diagnostic-tag-unnecessary-face "#e9967a"))
+  (set-face-background 'eglot-highlight-symbol-face "dark slate blue")
+  (set-face-foreground 'eglot-highlight-symbol-face "plum"))
 
 
 (use-package dune
