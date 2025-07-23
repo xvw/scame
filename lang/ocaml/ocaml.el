@@ -7,9 +7,8 @@
   (tuareg-mode . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
   (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
-  (eglot-managed-mode . (lambda () (flycheck-eglot-mode 1)))
   :config
-  (setq ocaml-eglot-syntax-checker 'flycheck)
+  (setq ocaml-eglot-syntax-checker 'flymake)
   (set-face-foreground 'eglot-diagnostic-tag-unnecessary-face "#e9967a"))
 
 

@@ -47,4 +47,6 @@
         "https://jon.recoil.org/atom.xml"
         "https://patrick.sirref.org/posts/atom.xml"
         "https://lambdafoo.com/rss.xml"
-        "https://opam.ocaml.org/blog//feed.xml"))
+        "https://opam.ocaml.org/blog//feed.xml"
+        "https://qexat.bearblog.dev/feed/"
+        "https://マリウス.com/index.xml"))

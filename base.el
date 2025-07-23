@@ -89,6 +89,15 @@
 
 ;;; Some Eglot configuration
 
+(use-package flymake
+  :ensure t
+  :pin gnu
+  :config
+  (setq flymake-diagnostic-format-alist
+        '((:error . (origin message))
+          (:warning . (origin message))
+          (:note . (origin message)))))
+
 (use-package flycheck-eglot
   :ensure t
   :after (flycheck eglot))
