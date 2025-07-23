@@ -94,9 +94,7 @@
   :pin gnu
   :config
   (setq flymake-diagnostic-format-alist
-        '((:error . (origin message))
-          (:warning . (origin message))
-          (:note . (origin message)))))
+        '((t . (origin code message)))))
 
 (use-package flycheck-eglot
   :ensure t
