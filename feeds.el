@@ -49,4 +49,5 @@
         "https://lambdafoo.com/rss.xml"
         "https://opam.ocaml.org/blog//feed.xml"
         "https://qexat.bearblog.dev/feed/"
-        "https://マリウス.com/index.xml"))
+        "https://マリウス.com/index.xml"
+        "https://patrick.sirref.org/posts/atom.xml"))
