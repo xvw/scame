@@ -50,4 +50,5 @@
         "https://opam.ocaml.org/blog//feed.xml"
         "https://qexat.bearblog.dev/feed/"
         "https://マリウス.com/index.xml"
-        "https://patrick.sirref.org/posts/atom.xml"))
+        "https://patrick.sirref.org/posts/atom.xml"
+        "https://ratfactor.com/atom.xml"))
