@@ -52,4 +52,5 @@
         "https://マリウス.com/index.xml"
         "https://patrick.sirref.org/posts/atom.xml"
         "https://ratfactor.com/atom.xml"
-        "https://jaspervdj.be/rss.xml"))
+        "https://jaspervdj.be/rss.xml"
+        "https://feeds.feedburner.com/incodeblog"))
