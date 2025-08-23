@@ -53,4 +53,5 @@
         "https://patrick.sirref.org/posts/atom.xml"
         "https://ratfactor.com/atom.xml"
         "https://jaspervdj.be/rss.xml"
-        "https://feeds.feedburner.com/incodeblog"))
+        "https://feeds.feedburner.com/incodeblog"
+        "https://sqrtminusone.xyz/index.xml"))
