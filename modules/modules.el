@@ -13,3 +13,4 @@
 (load "modules/yas")
 (load "modules/feed")
 (load "modules/misc")
+(load "modules/emms")
