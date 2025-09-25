@@ -38,12 +38,12 @@
   :ensure t
   :hook (prog-mode text-mode))
 
-;; Smartparens
-(use-package smartparens
-  :ensure smartparens
-  :hook (prog-mode text-mode markdown-mode)
-  :config
-  (require 'smartparens-config))
+;; ;; Smartparens
+;; (use-package smartparens
+;;   :ensure smartparens
+;;   :hook (prog-mode text-mode markdown-mode)
+;;   :config
+;;   (require 'smartparens-config))
 
 ;; iedit
 (use-package iedit
