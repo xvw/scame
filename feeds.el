@@ -54,4 +54,6 @@
         "https://ratfactor.com/atom.xml"
         "https://jaspervdj.be/rss.xml"
         "https://feeds.feedburner.com/incodeblog"
-        "https://sqrtminusone.xyz/index.xml"))
+        "https://sqrtminusone.xyz/index.xml"
+        "https://css-tricks.com/feed/"
+        "https://marcosh.github.io/feed.xml"))
