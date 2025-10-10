@@ -56,4 +56,5 @@
         "https://feeds.feedburner.com/incodeblog"
         "https://sqrtminusone.xyz/index.xml"
         "https://css-tricks.com/feed/"
-        "https://marcosh.github.io/feed.xml"))
+        "https://marcosh.github.io/feed.xml"
+        "https://jakub.kr/api/rss"))
