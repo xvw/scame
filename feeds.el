@@ -57,4 +57,5 @@
         "https://sqrtminusone.xyz/index.xml"
         "https://css-tricks.com/feed/"
         "https://marcosh.github.io/feed.xml"
-        "https://jakub.kr/api/rss"))
+        "https://jakub.kr/api/rss"
+        "https://goulven-clech.dev/feed.xml"))
