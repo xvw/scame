@@ -58,4 +58,5 @@
         "https://css-tricks.com/feed/"
         "https://marcosh.github.io/feed.xml"
         "https://jakub.kr/api/rss"
-        "https://goulven-clech.dev/feed.xml"))
+        "https://goulven-clech.dev/feed.xml"
+        "https://en.andros.dev/blog/feed/en/"))
