@@ -42,7 +42,7 @@
 
 
 ;; Enables automatic closing of brackets etc.
-(electric-pair-mode 1)
+(electric-pair-mode -1)
 
 ;; Sort folder before in dired
 (setq ls-lisp-use-insert-directory-program nil)

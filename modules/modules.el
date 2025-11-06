@@ -1,5 +1,6 @@
 (load "modules/icons")
 (load "modules/completion")
+(load "modules/parens")
 (load "modules/avy")
 (load "modules/modeline")
 (load "modules/ligature")
