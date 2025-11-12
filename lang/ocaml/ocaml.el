@@ -1,4 +1,5 @@
 (load "lang/ocaml/tuareg")
+(load "lang/ocaml/cram")
 
 (use-package ocaml-eglot
   :ensure t
