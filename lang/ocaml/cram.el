@@ -1,8 +1,8 @@
 ;;; cram-mode.el --- Emacs mode for CRAM tests            -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2023  Kiran Gopinathan, 2024 Michael Shulman
+;; Copyright (C) 2023  Kiran Gopinathan, 2024 Michael Shulman, 2025 Xavier Van de Woestyne
 
-;; Authors: Kiran Gopinathan, Michael Shulman
+;; Authors: Kiran Gopinathan, Michael Shulman, Xavier Van de Woestyne
 ;; Keywords: 
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -55,14 +55,36 @@
   (interactive)
   (compile "CLICOLOR_FORCE=1 OCAML_COLORS=always dune runtest --auto-promote"))
 
+(defun cram-mode-relative-position ()
+  "Compute a position from a virtual file into a cram file"
+  (interactive)
+  (save-excursion
+    (let ((orig-line (line-number-at-pos))
+          (orig-char (current-column))
+          start-line
+          delim)
+      (unless (re-search-backward "<<\\([A-Za-z0-9_]+\\)" nil t)
+        (user-error "Heredoc not found"))
+      (setq delim (match-string 1))
+      (setq start-line (1+ (line-number-at-pos)))
+      (save-excursion
+        (when (re-search-forward (concat "^\\s-*\\(" delim "\\)\\s-*$") nil t)
+          (let ((end-line (line-number-at-pos)))
+            (when (>= orig-line end-line)
+              (user-error "Position is after Heredoc %s" delim)))))
+      (let* ((rel-line (1+ (- orig-line start-line)))
+             (rel-char (- orig-char 3))
+             (pos-str (format "%d:%d" rel-line rel-char)))
+        (kill-new pos-str)
+        (message "[%s] in kill-ring" pos-str)))))
+
 ;;; Mode map:
 
 (defvar cram-mode-map
   (let ((map (make-keymap)))
-    (define-key map (kbd "<f1>")
-                #'cram-mode-compile)
-    (define-key map (kbd "<f2>")
-                #'cram-mode-compile-and-promote)
+    (define-key map (kbd "<f1>") #'cram-mode-compile)    
+    (define-key map (kbd "<f2>") #'cram-mode-compile-and-promote)
+    (define-key map (kbd "C-c C-p") #'cram-mode-relative-position)
     map)
   "Keymap for cram major mode.")
 
@@ -95,8 +117,7 @@
   (indent-tabs-mode 0)
   (setq indent-line-function 'cram-indent-line)
   (setq show-trailing-whitespace t)
-  (auto-revert-mode)
-  )
+  (auto-revert-mode))
 
 (provide 'cram-mode)
 ;;; cram-mode.el ends here
