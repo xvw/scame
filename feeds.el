@@ -60,4 +60,5 @@
         "https://jakub.kr/api/rss"
         "https://goulven-clech.dev/feed.xml"
         "https://en.andros.dev/blog/feed/en/"
-        "https://mccd.space/feed.xml"))
+        "https://mccd.space/feed.xml"
+        "https://xenodium.com/feed"))

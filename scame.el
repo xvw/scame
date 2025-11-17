@@ -6,6 +6,9 @@
 ;; The directories are organised (arguably correctly) so that they can
 ;; be scoped by theme.
 
+(require 'profiler)
+(profiler-start 'cpu)
+
 ;; Global configuration
 
 (load "base")
@@ -22,3 +25,12 @@
 
 ;; Very cutsom and early stuff
 (load "kohai")
+
+(add-hook 'emacs-startup-hook
+  (lambda ()
+    (message "Emacs loaded in %.2f seconds with %d GCs"
+             (float-time (time-subtract after-init-time before-init-time))
+             gcs-done)))
+
+(profiler-stop)
+(profiler-report) ;; opens profiler buffer

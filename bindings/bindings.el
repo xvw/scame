@@ -31,4 +31,4 @@
     (forward-line 1)
     (move-to-column col)))
 
-(global-set-key (kbd "C-<down>") 'duplicate-line)
+(global-set-key (kbd "C-x C-<down>") 'duplicate-line)
