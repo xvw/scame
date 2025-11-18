@@ -112,3 +112,10 @@
           (lambda ()
             (eglot-inlay-hints-mode -1)))
 
+
+;; Smarter Xref window jump
+(add-to-list
+ 'display-buffer-alist
+ '((category . xref-jump)
+   (display-buffer-reuse-window
+    display-buffer-use-some-window)))
