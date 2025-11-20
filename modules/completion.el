@@ -44,8 +44,19 @@
   (corfu-cycle t)
   :init
   (global-corfu-mode)
-  :config
+  (corfu-history-mode t)
   (corfu-popupinfo-mode 1))
+
+(use-package cape
+  :bind ("M-<tab>" . cape-prefix-map)
+  :init
+  (add-hook 'completion-at-point-functions #'cape-dabbrev)
+  (add-hook 'completion-at-point-functions #'cape-file)
+  (add-hook 'completion-at-point-functions #'cape-elisp-block)
+  (add-hook 'completion-at-point-functions #'cape-history)
+  (setq-default completion-at-point-functions
+                (append (default-value 'completion-at-point-functions)
+                        (list #'cape-dabbrev #'cape-file #'cape-abbrev))))
 
 (use-package emacs
   :custom
