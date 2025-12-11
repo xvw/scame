@@ -61,4 +61,5 @@
         "https://goulven-clech.dev/feed.xml"
         "https://en.andros.dev/blog/feed/en/"
         "https://mccd.space/feed.xml"
-        "https://xenodium.com/feed"))
+        "https://xenodium.com/feed"
+        "https://blog.veritates.love/rss.xml"))

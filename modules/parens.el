@@ -1,10 +1,5 @@
 (use-package smartparens
   :ensure t
-  :hook
-  ((emacs-lisp-mode
-    lisp-mode
-    lisp-interaction-mode
-    scheme-mode) . smartparens-strict-mode)
   :config
   (require 'smartparens-config)
   (define-key smartparens-mode-map (kbd "C-M-f") 'sp-forward-sexp)
