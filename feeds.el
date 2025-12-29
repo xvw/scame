@@ -62,4 +62,5 @@
         "https://en.andros.dev/blog/feed/en/"
         "https://mccd.space/feed.xml"
         "https://xenodium.com/feed"
-        "https://blog.veritates.love/rss.xml"))
+        "https://blog.veritates.love/rss.xml"
+        "http://miod.online.fr/rss.xml"))
