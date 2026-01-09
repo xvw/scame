@@ -1,0 +1,28 @@
+# name: init
+# key: !new
+# --
+(lang dune ${6:3.20})
+(name ${1:project-name})
+(version dev)
+(generate_opam_files)
+
+(source (${2:github} ${3:xvw}/$1))
+(license ${4:MIT})
+(authors "xvw <xaviervdw@gmail.com>")
+(maintainers "xvw <xaviervdw@gmail.com>")
+
+(package
+  (name $1)
+  (synopsis "")
+  (description "")
+  (depends
+    (ocaml (>= 5.${5:4.0}))
+    
+    $0
+    
+    ;; dev setup
+    (utop :with-dev-setup)
+    (ocamlformat :with-dev-setup)
+    (ocp-indent :with-dev-setup)
+    (merlin :with-dev-setup)
+    (ocaml-lsp-server :with-dev-setup)))
