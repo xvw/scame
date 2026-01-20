@@ -63,4 +63,5 @@
         "https://mccd.space/feed.xml"
         "https://xenodium.com/feed"
         "https://blog.veritates.love/rss.xml"
-        "http://miod.online.fr/rss.xml"))
+        "http://miod.online.fr/rss.xml"
+        "https://karthinks.com/index.xml"))
