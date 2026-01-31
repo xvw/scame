@@ -64,4 +64,5 @@
         "https://xenodium.com/feed"
         "https://blog.veritates.love/rss.xml"
         "http://miod.online.fr/rss.xml"
-        "https://karthinks.com/index.xml"))
+        "https://karthinks.com/index.xml"
+        "https://www.gridbugs.org/atom.xml"))
