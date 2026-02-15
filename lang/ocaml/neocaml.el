@@ -1,8 +1,7 @@
 (use-package neocaml
-  :vc (:url "https://github.com/bbatsov/neocaml" :rev :newest)
+  :ensure t
   :config
+  ;; Register neocaml modes with Eglot
   (with-eval-after-load 'eglot
     (add-to-list 'eglot-server-programs
-                 '(neocaml-mode . ("ocamllsp")))
-    (add-to-list 'eglot-server-programs
-                 '(neocamli-mode . ("ocamllsp")))))
+                 '((neocaml-mode neocaml-interface-mode) . ("ocamllsp")))))

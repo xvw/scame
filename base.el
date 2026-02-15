@@ -108,9 +108,9 @@
 ;;   :hook
 ;;   (flycheck-mode . flycheck-overlay-mode))
 
-(add-hook #'eglot-managed-mode-hook
-          (lambda ()
-            (eglot-inlay-hints-mode -1)))
+;; (add-hook #'eglot-managed-mode-hook
+;;           (lambda ()
+;;             (eglot-inlay-hints-mode -1)))
 
 
 ;; Smarter Xref window jump

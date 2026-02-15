@@ -1,11 +1,12 @@
-(load "lang/ocaml/tuareg")
+(load "lang/ocaml/neocaml")
 (load "lang/ocaml/cram")
 
 (use-package ocaml-eglot
   :ensure t
-  :after tuareg
+  :after neocaml
   :hook
   (tuareg-mode . ocaml-eglot)
+  ((neocaml-mode neocaml-interface-mode) . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
   (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
   :config
