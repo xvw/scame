@@ -17,7 +17,7 @@
 (load "lang/lang")
 (load "prelude")
 
-(set-face-attribute 'default nil :font "Fira Code" :height 140)
+(set-face-attribute 'default nil :font "JetBrainsMono NF" :height 140)
 (enable-theme 'doom-moonlight)
 ;; (enable-theme 'doom-horizon)
 

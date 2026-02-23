@@ -6,7 +6,7 @@
   :after neocaml
   :hook
   (tuareg-mode . ocaml-eglot)
-  ((neocaml-mode neocaml-interface-mode) . ocaml-eglot)
+  ((neocaml-mode neocaml-interface-mode tuareg-mode) . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
   (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
   :config
@@ -22,9 +22,15 @@
 (use-package opam-switch-mode
   :ensure t
   :hook
-  (tuareg-mode . opam-switch-mode))
+  (tuareg-mode . opam-switch-mode)
+  (neocaml-mode . opam-switch-mode)
+  (neocaml-interface-mode . opam-switch-mode))
 
 (use-package ocp-indent
   :ensure t
   :config
-  (add-hook 'ocaml-eglot-hook 'ocp-setup-indent))
+  (add-hook
+   'ocaml-eglot-hook
+   (lambda ()
+     (ocp-setup-indent)
+     (setq-local indent-line-function 'ocp-indent-line))))
