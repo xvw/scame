@@ -96,23 +96,6 @@
   (setq flymake-diagnostic-format-alist
         '((t . (origin code message)))))
 
-(use-package flycheck-eglot
-  :ensure t
-  :after (flycheck eglot))
-
-;; flycheck overlay !
-
-;; (use-package flycheck-overlay
-;;   :vc (:url "https://github.com/konrad1977/flycheck-overlay" :rev :newest)
-;;   :after (flycheck flycheck-eglot)
-;;   :hook
-;;   (flycheck-mode . flycheck-overlay-mode))
-
-;; (add-hook #'eglot-managed-mode-hook
-;;           (lambda ()
-;;             (eglot-inlay-hints-mode -1)))
-
-
 ;; Smarter Xref window jump
 (add-to-list
  'display-buffer-alist
