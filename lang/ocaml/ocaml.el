@@ -33,4 +33,5 @@
    'ocaml-eglot-hook
    (lambda ()
      (ocp-setup-indent)
-     (setq-local indent-line-function 'ocp-indent-line))))
+     (setq-local indent-line-function #'ocp-indent-line)
+     (setq-local indent-region-function #'ocp-ident-region))))
