@@ -63,4 +63,5 @@
         "https://blog.veritates.love/rss.xml"
         "http://miod.online.fr/rss.xml"
         "https://karthinks.com/index.xml"
-        "https://www.gridbugs.org/atom.xml"))
+        "https://www.gridbugs.org/atom.xml"
+        "https://ploum.net/atom.xml"))

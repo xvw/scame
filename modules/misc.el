@@ -20,17 +20,17 @@
 ;; rainbow delimiters
 (use-package rainbow-delimiters
   :ensure t
-  :hook (prog-mode text-mode conf-mode))
+  :hook (prog-mode conf-mode))
 
 ;; Display active key binding
 (use-package command-log-mode
   :ensure t)
 
 ;; Shortcut for moving at the begining or the end of a buffer
-(use-package beginend 
+(use-package beginend
   :ensure t
   :demand t
-  :config  
+  :config
   (beginend-global-mode))
 
 ;; Highlight TODO

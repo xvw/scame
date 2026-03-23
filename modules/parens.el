@@ -13,6 +13,7 @@
   (define-key smartparens-mode-map (kbd "M-(") 'sp-wrap-round)
   (define-key smartparens-mode-map (kbd "M-[") 'sp-wrap-square)
   (define-key smartparens-mode-map (kbd "M-{") 'sp-wrap-curly)
-  
-  (show-smartparens-global-mode 1)
-  (smartparens-global-mode 1))
+
+  (show-smartparens-global-mode -1)
+  (smartparens-global-mode -1))
+

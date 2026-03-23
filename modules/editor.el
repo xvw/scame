@@ -6,4 +6,4 @@
   (setq whitespace-style '(face spaces tabs trailing space-mark tab-mark))
   (setq whitespace-action '(cleanup auto-cleanup))
   :hook
-  (fundamental-mode text-mode conf-mode prog-mode))
+  (conf-mode prog-mode))
