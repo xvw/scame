@@ -7,3 +7,6 @@
   (setq whitespace-action '(cleanup auto-cleanup))
   :hook
   (conf-mode prog-mode))
+
+(use-package transient
+  :ensure t)

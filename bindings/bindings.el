@@ -20,7 +20,7 @@
   "Duplicate the current line N times."
   (interactive "p")
   (let ((col (current-column)))
-    (save-excursion    
+    (save-excursion
       (let ((line-text
              (buffer-substring
               (line-beginning-position)

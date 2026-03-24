@@ -1,5 +1,11 @@
+(load "lang/ocaml/transient")
 (load "lang/ocaml/neocaml")
 (load "lang/ocaml/cram")
+
+(defun xvw-ocaml-eglot-setup ()
+  "My custom OCaml-eglot Setup"
+  (add-hook #'before-save-hook #'eglot-format nil t)
+  (local-set-key (kbd "C-c c") #'ocaml-build))
 
 (use-package ocaml-eglot
   :ensure t
@@ -8,7 +14,7 @@
   (tuareg-mode . ocaml-eglot)
   ((neocaml-mode neocaml-interface-mode tuareg-mode) . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
-  (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
+  (ocaml-eglot . xvw-ocaml-eglot-setup)
   :config
   (setq ocaml-eglot-syntax-checker 'flymake)
   (set-face-foreground 'eglot-diagnostic-tag-unnecessary-face "gold3")
