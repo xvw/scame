@@ -5,7 +5,8 @@
 (defun xvw-ocaml-eglot-setup ()
   "My custom OCaml-eglot Setup"
   (add-hook #'before-save-hook #'eglot-format nil t)
-  (local-set-key (kbd "C-c c") #'ocaml-build))
+  (local-set-key (kbd "<f6>") #'ocaml-build)
+  (local-set-key (kbd "C-c b") #'ocaml-build))
 
 (use-package ocaml-eglot
   :ensure t
