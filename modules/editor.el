@@ -1,3 +1,6 @@
+(setq compilation-scroll-output t)
+(setq compilation-max-output-line-length nil)
+
 (use-package whitespace
   :config
   (setq whitespace-display-mappings
