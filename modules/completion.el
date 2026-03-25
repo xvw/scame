@@ -17,7 +17,11 @@
 ;; Completion result for vertico
 (use-package consult
   :ensure t
-  :bind (("C-c M-x" . consult-mode-command))
+  :bind (("C-c M-x" . consult-mode-command)
+         ("C-x b" . consult-buffer)
+         ("C-x C-b" . consult-buffer-other-window)
+         ("C-c x" . consult-flymake)
+         ("M-i" . consult-imenu))
   :hook (completion-list-mode . consult-preview-at-point-mode))
 
 ;; Make anotation in the mini-buffer (also for vertico)
