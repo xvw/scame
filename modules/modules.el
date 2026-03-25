@@ -1,4 +1,5 @@
 (load "modules/editor")
+(load "modules/compile")
 (load "modules/icons")
 (load "modules/completion")
 (load "modules/parens")
