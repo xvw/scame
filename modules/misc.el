@@ -53,3 +53,11 @@
 ;; Auto-dim-buffer
 (use-package auto-dim-other-buffers
   :ensure t)
+
+;; Highlight window change
+(use-package winpulse
+  :ensure t
+  :config
+  (winpulse-mode +1)
+  (setq winpulse-duration 0.5)
+  (setq winpulse-brightness 4))
