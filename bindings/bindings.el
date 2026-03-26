@@ -7,6 +7,7 @@
 
 (global-set-key (kbd "C-x r") 'consult-ripgrep)
 (global-set-key (kbd "C-x s") 'consult-line)
+(global-set-key (kbd "C-x v") 'consult-fd)
 (global-set-key (kbd "C-x C-u") 'vundo)
 
 ;; Buffer movement
