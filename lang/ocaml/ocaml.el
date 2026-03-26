@@ -6,8 +6,9 @@
   :hook
   (tuareg-mode . ocaml-eglot)
   (ocaml-eglot . eglot-ensure)
-  (ocaml-eglot . (lambda ()
-                   (add-hook #'before-save-hook #'eglot-format nil t))))
+  (ocaml-eglot . (lambda () (add-hook #'before-save-hook #'eglot-format nil t)))
+  :config
+  (setq ocaml-eglot-syntax-checker 'flymake))
 
 
 (use-package dune
