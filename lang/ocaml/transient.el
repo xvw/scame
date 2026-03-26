@@ -26,6 +26,11 @@
   (interactive)
   (dune--call "test"))
 
+(defun dune--test-auto ()
+  "run `dune test --auto'"
+  (interactive)
+  (dune--call "test" "--auto"))
+
 (defun dune--promote ()
   "run `dune promote'"
   (interactive)
@@ -54,7 +59,8 @@
                  ("i" "index" dune--index)]
    [:description "tests"
                  ("t" "test" dune--test)
-                 ("p" "promote" dune--promote)]
+                 ("p" "promote" dune--promote)
+                 ("ap" "test & promote" dune--test-auto)]
    [:description "doc"
                  ("d" "doc" dune--doc)
                  ("od" "doc-old" dune--doc--legacy)]
