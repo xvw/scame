@@ -89,6 +89,10 @@
 
 ;;; Some Eglot configuration
 
+(use-package flycheck-eglot
+  :ensure t
+  :after (flycheck eglot))
+
 (add-hook #'eglot-managed-mode-hook
           (lambda () (eldoc-mode -1)))
 
