@@ -7,7 +7,8 @@
   :hook
   (neocaml-base-mode . neocaml-ocp-indent-setup)
   (neocaml-base-mode . outline-minor-mode)
-  (neocaml-base-mode . neocaml-repl-minor-mode)
+  ;; FIXME: Change keybindings
+  ;; (neocaml-base-mode . neocaml-repl-minor-mode)
   (neocaml-base-mode . neocaml-dune-interaction-mode)
   (neocaml-dune-mode . neocaml-dune-interaction-mode)
   (neocaml-opam-mode . neocaml-dune-interaction-mode)
