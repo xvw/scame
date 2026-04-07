@@ -17,9 +17,9 @@
   (description "")
   (depends
     (ocaml (>= 5.${5:4.0}))
-    
+
     $0
-    
+
     ;; dev setup
     (utop :with-dev-setup)
     (ocamlformat :with-dev-setup)
