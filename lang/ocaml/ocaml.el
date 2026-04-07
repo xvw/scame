@@ -1,6 +1,5 @@
 (load "lang/ocaml/transient")
 (load "lang/ocaml/neocaml")
-(load "lang/ocaml/cram")
 
 (defun xvw-ocaml-eglot-setup ()
   "My custom OCaml-eglot Setup"
@@ -14,9 +13,9 @@
   :ensure t
   :after neocaml
   :hook
-  (neocaml-base-mode . ocaml-eglot)
-  (ocaml-eglot . eglot-ensure)
-  (ocaml-eglot . xvw-ocaml-eglot-setup)
+  (neocaml-base-mode . ocaml-eglot-mode)
+  (ocaml-eglot-mode . eglot-ensure)
+  (ocaml-eglot-mode . xvw-ocaml-eglot-setup)
   :config
   (setq ocaml-eglot-syntax-checker 'flymake)
   (set-face-foreground 'eglot-diagnostic-tag-unnecessary-face "gold3")
@@ -34,7 +33,7 @@
   :ensure t
   :config
   (add-hook
-   'ocaml-eglot-hook
+   'ocaml-eglot-mode-hook
    (lambda ()
      (ocp-setup-indent)
      (setq-local indent-line-function #'ocp-indent-line)
