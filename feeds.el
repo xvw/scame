@@ -64,4 +64,5 @@
         "http://miod.online.fr/rss.xml"
         "https://karthinks.com/index.xml"
         "https://www.gridbugs.org/atom.xml"
-        "https://ploum.net/atom.xml"))
+        "https://ploum.net/atom.xml"
+        "https://www.pfrazee.com/feed.xml"))
