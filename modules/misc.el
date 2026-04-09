@@ -59,5 +59,5 @@
   :ensure t
   :config
   (winpulse-mode +1)
-  (setq winpulse-duration 0.5)
-  (setq winpulse-brightness 4))
+  (setq winpulse-duration 0.3)
+  (setq winpulse-brightness 10))
