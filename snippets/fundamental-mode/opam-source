@@ -1,0 +1,5 @@
+# name: opam-source
+# key: !opam-source
+# --
+
+[ ! -d "${1:vendors}/${2:package-name}" ] && opam source $2 --dir $1/$2
