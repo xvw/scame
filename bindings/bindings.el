@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Global key bindings
 
 ;; Add C-c g for Esc key

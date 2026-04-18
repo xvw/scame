@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Git support for emacs
 (use-package magit
   :commands (magit-status magit-get-current-branch)

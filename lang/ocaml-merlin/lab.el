@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Some experimentation
 
 

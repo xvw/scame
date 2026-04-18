@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; A more expressive mode-line
 (use-package doom-modeline
   :ensure t

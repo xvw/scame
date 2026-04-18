@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Scame is my (https://xvw.lol) personal configuration of Emacs, and
 ;; I also use it as an incubator for features that could potentially
 ;; be released as packages or as potential improvements to existing

@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; This directory contains all the configuration relating to the Emacs
 ;; theming process (UI changes, themes information, etc.).
 

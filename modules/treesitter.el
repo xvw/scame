@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; (use-package combobulate
 ;;   :custom
 ;;   (combobulate-key-prefix "C-c o")

@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; colorful mode
 (use-package colorful-mode
   :ensure t

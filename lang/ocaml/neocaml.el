@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (defun neocaml-ocp-indent-setup ()
   (setq-local indent-line-function #'ocp-indent-line)
   (setq-local indent-region-function #'ocp-indent-region))

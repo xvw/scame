@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (use-package whitespace
   :config
   (setq whitespace-display-mappings

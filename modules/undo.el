@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Visual Undo-tree
 (use-package vundo
   :ensure t

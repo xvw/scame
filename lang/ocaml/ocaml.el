@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (load "lang/ocaml/transient")
 (load "lang/ocaml/neocaml")
 

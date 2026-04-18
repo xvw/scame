@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (load "lang/elisp")             ;; Support for elisp ediition
 (load "lang/markdown")          ;; Support for editing Markdown
 (load "lang/asciidoc")          ;; Support for editing AsciiDoc

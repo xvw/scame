@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Vertico allows completion in the mini-buffer
 (use-package vertico
   :diminish

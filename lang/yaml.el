@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Global support of Yaml files
 
 ;; Global Yaml mode

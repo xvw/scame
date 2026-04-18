@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;; Global module for dealing with web development
 
 (use-package web-mode

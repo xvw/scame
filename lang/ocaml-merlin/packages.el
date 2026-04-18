@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (use-package merlin
   :ensure t
   :bind (:map merlin-mode-map

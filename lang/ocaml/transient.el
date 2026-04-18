@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;; Some useful commands
 
 (require 'transient)

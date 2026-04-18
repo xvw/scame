@@ -1,3 +1,6 @@
+;; -*- lexical-binding: t; -*-
+
+
 ;; Some pervasives configuration
 
 ;; Removes the splash-screen

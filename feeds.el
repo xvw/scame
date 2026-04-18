@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (setq elfeed-feeds
       '("https://xvw.lol/atom.xml"
         "https://xvw.lol/en/atom.xml"

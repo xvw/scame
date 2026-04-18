@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Highlighting in Dired
 (use-package diredfl
   :ensure t

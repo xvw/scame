@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; A set of icons used in particular by doomline-mode
 (use-package nerd-icons
   :ensure t)

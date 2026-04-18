@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (use-package emms
   :ensure t
   :config

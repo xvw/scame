@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (use-package uniline
   :defer t
   :bind ("C-<insert>" . uniline-mode)

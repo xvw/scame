@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (load "modules/editor")
 (load "modules/treesitter")
 (load "modules/compile")

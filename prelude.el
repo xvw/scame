@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Auto create missing dir when opening a file
 ;; from: https://emacsredux.com/blog/2022/06/12/auto-create-missing-directories/
 

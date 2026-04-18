@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Enable ligature for the Fira Code typography set
 
 (use-package ligature

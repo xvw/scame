@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; WIP
 
 (add-to-list 'load-path "~/Projects/perso/kohai/site-lisp")

@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Install vterm
 (use-package vterm
   :ensure t)

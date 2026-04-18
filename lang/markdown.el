@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Support for Markdown edition
 
 (defun markdown-compile-multimarkdown (beg end output-buffer)
