@@ -49,8 +49,8 @@
   (load-theme 'doom-snazzy t)
   (load-theme 'doom-tomorrow-night t))
 
-(use-package nord-theme
-  :ensure t)
+;; (use-package nord-theme
+;;   :ensure t)
 
-(use-package zerodark-theme
-  :ensure t)
+;; (use-package zerodark-theme
+;;   :ensure t)
