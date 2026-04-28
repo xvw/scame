@@ -67,4 +67,5 @@
         "https://karthinks.com/index.xml"
         "https://www.gridbugs.org/atom.xml"
         "https://ploum.net/atom.xml"
-        "https://www.pfrazee.com/feed.xml"))
+        "https://www.pfrazee.com/feed.xml"
+        "https://www.chrisarmstrong.dev/feed.xml"))
