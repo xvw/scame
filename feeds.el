@@ -69,4 +69,5 @@
         "https://ploum.net/atom.xml"
         "https://www.pfrazee.com/feed.xml"
         "https://www.chrisarmstrong.dev/feed.xml"
-        "https://ficd.sh/rss.xml"))
+        "https://ficd.sh/rss.xml"
+        "https://tympanus.net/codrops/feed/"))
