@@ -72,4 +72,5 @@
         "https://ficd.sh/rss.xml"
         "https://tympanus.net/codrops/feed/"
         "https://blog.maximeheckel.com/rss.xml"
-        "https://ryan.freumh.org/home.xml"))
+        "https://ryan.freumh.org/home.xml"
+        "https://utcc.utoronto.ca/~cks/space/blog/?atom"))
