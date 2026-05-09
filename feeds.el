@@ -74,4 +74,5 @@
         "https://blog.maximeheckel.com/rss.xml"
         "https://ryan.freumh.org/home.xml"
         "https://utcc.utoronto.ca/~cks/space/blog/?atom"
-        "https://welltypedwit.ch/rss.xml"))
+        "https://welltypedwit.ch/rss.xml"
+        "https://contretemps.azeau.com/index.xml"))
