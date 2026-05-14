@@ -20,4 +20,5 @@
 (enable-theme 'doom-moonlight)
 ;; (enable-theme 'doom-horizon)
 
+(load "kohai")
 (load "feeds")
