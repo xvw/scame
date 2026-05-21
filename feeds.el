@@ -76,4 +76,5 @@
         "https://utcc.utoronto.ca/~cks/space/blog/?atom"
         "https://welltypedwit.ch/rss.xml"
         "https://contretemps.azeau.com/index.xml"
-        "https://gilwath.com/atom.xml"))
+        "https://gilwath.com/atom.xml"
+        "https://bubbles.town/feed"))
