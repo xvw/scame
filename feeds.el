@@ -77,4 +77,8 @@
         "https://welltypedwit.ch/rss.xml"
         "https://contretemps.azeau.com/index.xml"
         "https://gilwath.com/atom.xml"
-        "https://bubbles.town/feed"))
+        "https://bubbles.town/feed"
+        "https://lyra.horse/blog/posts/index.xml"
+        "Http://jackkelly.name/blog/atom.xml"
+        "https://www.filfre.net/feed/rss/"
+        "https://robida.net/feed.atom"))

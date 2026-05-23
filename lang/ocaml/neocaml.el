@@ -16,7 +16,6 @@
   (neocaml-opam-mode . neocaml-dune-interaction-mode)
   (neocaml-opam-mode . flymake-mode)
   :config
-  (setq treesit-font-lock-level 4)
   ;; Register neocaml modes with Eglot-Managed-Mode-Hook
   (with-eval-after-load 'eglot
     (add-to-list 'eglot-server-programs
