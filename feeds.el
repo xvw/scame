@@ -81,4 +81,5 @@
         "https://lyra.horse/blog/posts/index.xml"
         "Http://jackkelly.name/blog/atom.xml"
         "https://www.filfre.net/feed/rss/"
-        "https://robida.net/feed.atom"))
+        "https://robida.net/feed.atom"
+        "https://romain-deneau.hashnode.dev/rss.xml"))
