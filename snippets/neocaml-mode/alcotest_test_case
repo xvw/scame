@@ -1,0 +1,9 @@
+# name: test_case
+# key: %case
+# --
+test_case "$1" `Quick (fun () ->
+  let expected = ${2:_}
+  and computed = ${3:_} in
+  check (${4:int}) "${5:should be equal}"
+    expected computed
+)
