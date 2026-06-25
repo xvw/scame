@@ -83,4 +83,5 @@
         "https://www.filfre.net/feed/rss/"
         "https://robida.net/feed.atom"
         "https://romain-deneau.hashnode.dev/rss.xml"
-        "https://hawksley.dev/rss.xml"))
+        "https://hawksley.dev/rss.xml"
+        "https://benmandrew.com/feed.xml"))
