@@ -1,7 +1,8 @@
 ;; -*- lexical-binding: t; -*-
 
 (load "lang/ocaml/transient")
-(load "lang/ocaml/neocaml")
+;; (load "lang/ocaml/neocaml")
+(load "lang/ocaml/tuareg")
 
 (defun xvw-ocaml-eglot-setup ()
   "My custom OCaml-eglot Setup"
@@ -11,11 +12,24 @@
 (global-set-key (kbd "C-c b") #'ocaml-build)
 (global-set-key (kbd "M-RET") #'recompile)
 
+;; (use-package ocaml-eglot
+;;   :ensure t
+;;   :after neocaml
+;;   :hook
+;;   (neocaml-base-mode . ocaml-eglot-mode)
+;;   (ocaml-eglot-mode . eglot-ensure)
+;;   (ocaml-eglot-mode . xvw-ocaml-eglot-setup)
+;;   :config
+;;   (setq ocaml-eglot-syntax-checker 'flymake)
+;;   (set-face-foreground 'eglot-diagnostic-tag-unnecessary-face "gold3")
+;;   (set-face-background 'eglot-highlight-symbol-face "dark slate blue")
+;;   (set-face-foreground 'eglot-highlight-symbol-face "plum"))
+
 (use-package ocaml-eglot
   :ensure t
-  :after neocaml
+  :after tuareg
   :hook
-  (neocaml-base-mode . ocaml-eglot-mode)
+  (tuareg-mode . ocaml-eglot-mode)
   (ocaml-eglot-mode . eglot-ensure)
   (ocaml-eglot-mode . xvw-ocaml-eglot-setup)
   :config
@@ -28,8 +42,9 @@
   :ensure t
   :hook
   (tuareg-mode . opam-switch-mode)
-  (neocaml-mode . opam-switch-mode)
-  (neocaml-interface-mode . opam-switch-mode))
+  ;; (neocaml-mode . opam-switch-mode)
+  ;; (neocaml-interface-mode . opam-switch-mode)
+  )
 
 (use-package ocp-indent
   :ensure t
