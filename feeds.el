@@ -82,4 +82,5 @@
         "Http://jackkelly.name/blog/atom.xml"
         "https://www.filfre.net/feed/rss/"
         "https://robida.net/feed.atom"
-        "https://romain-deneau.hashnode.dev/rss.xml"))
+        "https://romain-deneau.hashnode.dev/rss.xml"
+        "https://hawksley.dev/rss.xml"))
