@@ -20,3 +20,4 @@
 (load "modules/feed")
 (load "modules/misc")
 (load "modules/emms")
+(load "modules/agent")

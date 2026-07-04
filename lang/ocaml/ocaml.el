@@ -25,6 +25,7 @@
 ;;   (set-face-background 'eglot-highlight-symbol-face "dark slate blue")
 ;;   (set-face-foreground 'eglot-highlight-symbol-face "plum"))
 
+
 (use-package ocaml-eglot
   :ensure t
   :after tuareg
