@@ -39,6 +39,10 @@
 ;; Hook between Embark and consult
 (use-package embark-consult
   :ensure t
+  :bind (("C-." . embark-act)
+         ("C-h B" . embark-bindings))
+  :init
+  (setq prefix-help-command #'embark-prefix-help-command)
   :hook
   (embark-collect-mode . consult-preview-at-point-mode))
 
@@ -85,3 +89,4 @@
   :after corfu
   :config
   (add-to-list 'corfu-margin-formatters #'nerd-icons-corfu-formatter))
+

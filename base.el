@@ -66,6 +66,7 @@
 (tooltip-mode -1)
 (set-fringe-mode 10)
 (menu-bar-mode -1)
+(which-key-mode 1)
 
 ;; Everything to do with declarative package installation and default
 ;; package support, not related to language support.
@@ -97,7 +98,8 @@
   :pin gnu
   :config
   (setq flymake-diagnostic-format-alist
-        '((t . (origin code message)))))
+        '((t . (origin code message))))
+  (setq flymake-show-diagnostics-at-end-of-line t))
 
 ;; Smarter Xref window jump
 (add-to-list
