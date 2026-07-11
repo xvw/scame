@@ -99,7 +99,7 @@
   :config
   (setq flymake-diagnostic-format-alist
         '((t . (origin code message))))
-  (setq flymake-show-diagnostics-at-end-of-line t))
+  (setq flymake-show-diagnostics-at-end-of-line nil))
 
 ;; Smarter Xref window jump
 (add-to-list
