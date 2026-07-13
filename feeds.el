@@ -85,4 +85,5 @@
         "https://romain-deneau.hashnode.dev/rss.xml"
         "https://hawksley.dev/rss.xml"
         "https://benmandrew.com/feed.xml"
-        "https://blog.poisson.chat/rss.xml"))
+        "https://blog.poisson.chat/rss.xml"
+        "https://www.chiply.dev/rss.xml"))
