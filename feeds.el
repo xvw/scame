@@ -86,4 +86,5 @@
         "https://hawksley.dev/rss.xml"
         "https://benmandrew.com/feed.xml"
         "https://blog.poisson.chat/rss.xml"
-        "https://www.chiply.dev/rss.xml"))
+        "https://www.chiply.dev/rss.xml"
+        "https://datagubbe.se/atom.xml"))
