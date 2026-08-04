@@ -89,4 +89,5 @@
         "https://www.chiply.dev/rss.xml"
         "https://datagubbe.se/atom.xml"
         "https://lisyarus.github.io/blog/feed.xml"
-        "https://localghost.dev/feed.xml"))
+        "https://localghost.dev/feed.xml"
+        "https://gazagnaire.org/feed.xml"))
