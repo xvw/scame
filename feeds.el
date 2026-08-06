@@ -91,4 +91,5 @@
         "https://lisyarus.github.io/blog/feed.xml"
         "https://localghost.dev/feed.xml"
         "https://gazagnaire.org/feed.xml"
-        "https://sachachua.com/blog/feed/index.xml"))
+        "https://sachachua.com/blog/feed/index.xml"
+        "https://protesilaos.com/master.xml"))
