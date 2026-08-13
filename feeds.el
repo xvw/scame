@@ -92,4 +92,5 @@
         "https://gazagnaire.org/feed.xml"
         "https://sachachua.com/blog/feed/index.xml"
         "https://protesilaos.com/master.xml"
-        "https://blog.adamledoux.net/feed.xml"))
+        "https://blog.adamledoux.net/feed.xml"
+        "https://taonaw.com/feed.xml"))
