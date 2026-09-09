@@ -93,4 +93,5 @@
         "https://blog.adamledoux.net/feed.xml"
         "https://taonaw.com/feed.xml"
         "https://www.benjoffe.com/rss.xml"
-        "https://punchagan.muse-amuse.in/index.xml"))
+        "https://punchagan.muse-amuse.in/index.xml"
+        "https://def.lakaban.net/index.xml"))
