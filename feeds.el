@@ -97,4 +97,5 @@
         "https://def.lakaban.net/index.xml"
         "https://www.jonmsterling.com/007W/atom.xml"
         "https://www.inkandswitch.com/index.xml"
-        "https://www.funcp.org/feed.xml"))
+        "https://www.funcp.org/feed.xml"
+        "https://blog.ploeh.dk/atom.xml"))
