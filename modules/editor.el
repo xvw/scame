@@ -1,5 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 
+
 (use-package whitespace
   :config
   (setq whitespace-display-mappings
@@ -10,6 +11,7 @@
   :hook
   (conf-mode prog-mode))
 
+
 (use-package transient
   :ensure t)
 
@@ -17,6 +19,11 @@
 ;; (use-package eldoc-box
 ;;   :init
 ;;   (add-hook 'eglot-managed-mode-hook #'eldoc-box-hover-mode t))
+
+(use-package eldoc-box
+  :hook (eglot-managed-mode . eldoc-box-hover-mode)
+  :bind (:map eglot-mode-map
+              ("<f12>" . eldoc-box-hover-mode)))
 
 
 ;; (use-package flyover

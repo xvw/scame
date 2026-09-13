@@ -54,7 +54,7 @@
 
 ;; Support for cursor, line numbers, etc.
 (global-display-line-numbers-mode 1)
-(hl-line-mode 1)
+(global-hl-line-mode)
 (blink-cursor-mode 5)
 (setq column-number-mode t)
 

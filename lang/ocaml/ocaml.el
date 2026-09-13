@@ -54,4 +54,4 @@
    (lambda ()
      (ocp-setup-indent)
      (setq-local indent-line-function #'ocp-indent-line)
-     (setq-local indent-region-function #'ocp-ident-region))))
+     (setq-local indent-region-function #'ocp-indent-region))))
