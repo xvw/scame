@@ -1,0 +1,7 @@
+# name: license
+# key: %li
+# --
+(* Copyright (c) ${2:2026}, ${3:Cargocut} and the ${1:project} developers.
+   All rights reserved.
+
+   SPDX-License-Identifier: ${4:BSD-3-Clause} *)
