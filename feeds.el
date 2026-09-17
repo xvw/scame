@@ -95,4 +95,5 @@
         "https://www.benjoffe.com/rss.xml"
         "https://punchagan.muse-amuse.in/index.xml"
         "https://def.lakaban.net/index.xml"
-        "https://www.jonmsterling.com/007W/atom.xml"))
+        "https://www.jonmsterling.com/007W/atom.xml"
+        "https://www.inkandswitch.com/index.xml"))
