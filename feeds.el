@@ -99,4 +99,5 @@
         "https://www.inkandswitch.com/index.xml"
         "https://www.funcp.org/feed.xml"
         "https://blog.ploeh.dk/atom.xml"
-        "https://elvishjerricco.github.io/feed.xml"))
+        "https://elvishjerricco.github.io/feed.xml"
+        "http://bartoszmilewski.com/feed/"))
