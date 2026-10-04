@@ -101,4 +101,5 @@
         "https://blog.ploeh.dk/atom.xml"
         "https://elvishjerricco.github.io/feed.xml"
         "http://bartoszmilewski.com/feed/"
-        "https://blog.ocharles.org.uk/posts.rss"))
+        "https://blog.ocharles.org.uk/posts.rss"
+        "https://linuxfr.org//news.atom"))
