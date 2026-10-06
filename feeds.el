@@ -102,4 +102,5 @@
         "https://elvishjerricco.github.io/feed.xml"
         "http://bartoszmilewski.com/feed/"
         "https://blog.ocharles.org.uk/posts.rss"
-        "https://linuxfr.org//news.atom"))
+        "https://linuxfr.org//news.atom"
+        "https://ocamlpro.com/blog/feed/"))
