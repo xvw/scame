@@ -103,4 +103,6 @@
         "http://bartoszmilewski.com/feed/"
         "https://blog.ocharles.org.uk/posts.rss"
         "https://linuxfr.org//news.atom"
-        "https://ocamlpro.com/blog/feed/"))
+        "https://ocamlpro.com/blog/feed/"
+        "https://serokell.io/blog.rss.xml"
+        "https://www.tweag.io/rss.xml"))
